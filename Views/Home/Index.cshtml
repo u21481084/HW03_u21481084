@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row" id="heading">
+    <h2>myMedia</h2>
+    <h4>File uploading/downloading</h4>
+</div>
+
+<div class="row" id="body1">
+    <div class="col-md-4">
+        <h2>Description</h2>
+        <p>
+            Yae Miko is the Head Shrine Maiden at the Grand Narukami Shrine 
+            and is an old friend of Raiden Shogun (Baal) and Zhongli (Morax). 
+            While she may be beautiful, don't be fooled - she is packed with knowledge
+            as old as time and should not be underestimated.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Option Select</h2>
+        <input type="radio" id="Doc" name="files" value="Document">
+        <label for="Document">Document</label><br>
+        <input type="radio" id="Img" name="files" value="Image">
+        <label for="Image">Image</label><br>
+        <input type="radio" id="Vid" name="files" value="Video">
+        <label for="Video">Video</label><br>
+         <div>
+         <button type="button">Browse</button>
+         <p id="fileName" style="display:inline">No file selected</p>
+         </div><br>
+      
+        <button type="button">Submit</button>
+
+
+    </div>
+</div>
