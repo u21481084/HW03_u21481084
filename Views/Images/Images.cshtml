@@ -4,4 +4,31 @@
 }
 
 <h2>Images</h2>
+<div class=" container">
+    <div class="row-fluid">
+
+        @foreach (var image in Model)
+        {
+            string name = image.FileName;
+
+            <div class=" col-md-4">
+                <div class="card card-outline-info" style="width: 25rem; padding: 2%">
+                    <a href="/Media/Image/@image.FileName"
+                       data-fancybox="gallery"
+                       data-caption="Optional caption">
+                    <img class="card-img-top" src="/Media/Image/@image.FileName" height="200" width="300">
+                    </a>
+                    <p>@image.FileName</p>
+                    <input type="button" class="btn btn-success" value="Download"
+                           onclick="location.href='@Url.Action("Download", "Images", new { fileName = image.FileName})'" />
+                    <input type="button" class="btn btn-danger" value="Delete"
+                           onclick="location.href='@Url.Action("Delete", "Images", new { fileName = image.FileName})'" />
+                </div>
+            </div>
+
+
+
+        }
+    </div>
+    </div>
 
