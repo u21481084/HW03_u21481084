@@ -7,7 +7,7 @@
 
 <table class="table">
     
-        <tr>
+        <tr class="x">
             <th>File Name</th>
             <th>Download</th>
             <th>Delete</th>
@@ -16,7 +16,7 @@
     @foreach (var item in Model)
     {
 <tr>
-    <td>@item.FileName</td>
+    <td class="x">@item.FileName</td>
     <td>
         <input type="button" class="btn btn-success" value="Download"
                onclick="location.href='@Url.Action("Download", "Document", new { fileName = item.FileName})'" />

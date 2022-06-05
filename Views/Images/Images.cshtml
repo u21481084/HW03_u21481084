@@ -18,7 +18,7 @@
                        data-caption="Optional caption">
                     <img class="card-img-top" src="/Media/Image/@image.FileName" height="200" width="300">
                     </a>
-                    <p>@image.FileName</p>
+                    <p class="x">@image.FileName</p>
                     <input type="button" class="btn btn-success" value="Download"
                            onclick="location.href='@Url.Action("Download", "Images", new { fileName = image.FileName})'" />
                     <input type="button" class="btn btn-danger" value="Delete"

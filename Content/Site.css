@@ -4,8 +4,9 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
     color: whitesmoke;
-    background-image: url(https://acegif.com/wp-content/gifs/starfall-gif-46.gif);
-    background-size: auto;
+    background-image: url(https://cutewallpaper.org/25/animated-wallpaper-anime-pixel-art/galaxxy-idols-bg-the-lounge-by-nanocanyon-on-newgrounds-pixel-art-background-anime-pixel-art-cool-pixel-art.gif);
+    background-size: cover;
+    color:springgreen;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -35,6 +36,11 @@ textarea {
 .songplayer{
     width:100%;
     max-width:600px;
+}
+.x{
+    background-color:black;
+    color:springgreen;
+    opacity:0.85;
 }
 
 

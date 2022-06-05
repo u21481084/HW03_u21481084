@@ -6,7 +6,7 @@
 <h2>Music</h2>
 <table class="table">
 
-    <tr>
+    <tr class="x">
         <th>File Name</th>
         <th>Play/Pause</th>
         <th>Download</th>
@@ -16,7 +16,7 @@
     @foreach (var Song in Model)
     {
         <tr>
-            <td>@Song.FileName</td>
+            <td class="x">@Song.FileName</td>
             <td><audio class="songplayer" controls>
     <source src="~/Media/Music/@Song.FileName" type="audio/mpeg">
 </audio></td>
