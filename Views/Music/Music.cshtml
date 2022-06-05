@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Music";
+}
+
+<h2>Music</h2>
+<table class="table">
+
+    <tr>
+        <th>File Name</th>
+        <th>Play/Pause</th>
+        <th>Download</th>
+        <th>Delete</th>
+    </tr>
+
+    @foreach (var Song in Model)
+    {
+        <tr>
+            <td>@Song.FileName</td>
+            <td><audio class="songplayer" controls>
+    <source src="~/Media/Music/@Song.FileName" type="audio/mpeg">
+</audio></td>
+
+            <td>
+                <input type="button" class="btn btn-success" value="Download"
+                       onclick="location.href='@Url.Action("Download", "Music", new { fileName = Song.FileName})'" />
+            </td>
+            <td>
+                <input type="button" class="btn btn-danger" value="Delete"
+                       onclick="location.href='@Url.Action("Delete", "Music", new { fileName = Song.FileName})'" />
+            </td>
+
+        </tr>
+    }
+</table>

@@ -13,10 +13,8 @@
     <div class="col-md-4">
         <h2>Description</h2>
         <p>
-            Yae Miko is the Head Shrine Maiden at the Grand Narukami Shrine 
-            and is an old friend of Raiden Shogun (Baal) and Zhongli (Morax). 
-            While she may be beautiful, don't be fooled - she is packed with knowledge
-            as old as time and should not be underestimated.
+            This project demonstrates file uploading and downloading. The user will be able to upload a file to the file type folder.
+            They can then view all files in each folder according to the page selected. Users also have the option to delete these files from the folders.
         </p>
     </div>
     <div class="col-md-4">
@@ -36,12 +34,13 @@
                 Document @Html.RadioButton("FileType", "Document")<br />
                 Image @Html.RadioButton("FileType", "Image")<br />
                 Video @Html.RadioButton("FileType", "Video")<br />
+                Music @Html.RadioButton("FileType","Music")<br />
             </div>
 
             <input type="file" name="files" id="files" multiple="multiple" />
             <br>
 
-            <input type="submit" class="btn" name="submit" />
+            <input type="submit" class="btn" id="btnSubmit" name="submit" />
         }
 
 
